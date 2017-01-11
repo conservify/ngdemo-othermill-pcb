@@ -1,0 +1,362 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:example-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X06 P3
+U 1 1 5875956A
+P 5050 2400
+F 0 "P3" H 5050 2750 50  0000 C CNN
+F 1 "CONN_01X06" V 5150 2400 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x06" H 5050 2400 50  0001 C CNN
+F 3 "" H 5050 2400 50  0000 C CNN
+	1    5050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 587596E9
+P 3450 2650
+F 0 "R1" V 3530 2650 50  0000 C CNN
+F 1 "R" V 3450 2650 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 3380 2650 50  0001 C CNN
+F 3 "" H 3450 2650 50  0000 C CNN
+	1    3450 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 58759766
+P 4250 2650
+F 0 "R2" V 4330 2650 50  0000 C CNN
+F 1 "R" V 4250 2650 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 4180 2650 50  0001 C CNN
+F 3 "" H 4250 2650 50  0000 C CNN
+	1    4250 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 58759956
+P 3150 2750
+F 0 "#PWR01" H 3150 2500 50  0001 C CNN
+F 1 "GND" H 3150 2600 50  0000 C CNN
+F 2 "" H 3150 2750 50  0000 C CNN
+F 3 "" H 3150 2750 50  0000 C CNN
+	1    3150 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4850 2450
+NoConn ~ 4850 2350
+$Comp
+L CONN_01X20 P5
+U 1 1 58759D71
+P 6250 2200
+F 0 "P5" H 6250 3250 50  0000 C CNN
+F 1 "CONN_01X20" V 6350 2200 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x20" H 6250 2200 50  0001 C CNN
+F 3 "" H 6250 2200 50  0000 C CNN
+	1    6250 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 1250
+NoConn ~ 6050 1350
+NoConn ~ 6050 1450
+NoConn ~ 6050 1550
+NoConn ~ 6050 1850
+NoConn ~ 6050 1750
+NoConn ~ 6050 1650
+NoConn ~ 6050 3150
+NoConn ~ 6050 3050
+NoConn ~ 6050 2950
+NoConn ~ 6050 2850
+NoConn ~ 6050 2750
+NoConn ~ 6050 2650
+NoConn ~ 6050 2550
+NoConn ~ 6050 2450
+NoConn ~ 6050 2350
+NoConn ~ 6050 2250
+NoConn ~ 6050 2150
+NoConn ~ 6050 2050
+NoConn ~ 6050 1950
+$Comp
+L CONN_01X12 P6
+U 1 1 58764702
+P 3350 4100
+F 0 "P6" H 3350 4750 50  0000 C CNN
+F 1 "CONN_01X12" V 3450 4100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12" H 3350 4100 50  0001 C CNN
+F 3 "" H 3350 4100 50  0000 C CNN
+	1    3350 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X16 P7
+U 1 1 587647B3
+P 3550 4650
+F 0 "P7" H 3550 5500 50  0000 C CNN
+F 1 "CONN_01X16" V 3650 4650 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x16" H 3550 4650 50  0001 C CNN
+F 3 "" H 3550 4650 50  0000 C CNN
+	1    3550 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X09 P8
+U 1 1 58764DA2
+P 5900 4300
+F 0 "P8" H 5900 4800 50  0000 C CNN
+F 1 "CONN_01X09" V 6000 4300 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x09" H 5900 4300 50  0001 C CNN
+F 3 "" H 5900 4300 50  0000 C CNN
+	1    5900 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 4000
+NoConn ~ 5700 4100
+NoConn ~ 5700 4200
+NoConn ~ 5700 4700
+NoConn ~ 5700 4600
+$Comp
+L GND #PWR02
+U 1 1 58764FFD
+P 5500 4600
+F 0 "#PWR02" H 5500 4350 50  0001 C CNN
+F 1 "GND" H 5500 4450 50  0000 C CNN
+F 2 "" H 5500 4600 50  0000 C CNN
+F 3 "" H 5500 4600 50  0000 C CNN
+	1    5500 4600
+	1    0    0    -1  
+$EndComp
+Text Label 3950 2850 0    60   ~ 0
+BAT
+Wire Wire Line
+	3600 2650 4100 2650
+Wire Wire Line
+	3150 2250 3150 2750
+Wire Wire Line
+	3150 2650 3300 2650
+Wire Wire Line
+	4400 2650 4850 2650
+Wire Wire Line
+	3150 2550 4850 2550
+Connection ~ 3150 2650
+Wire Wire Line
+	4850 2250 3150 2250
+Connection ~ 3150 2550
+Connection ~ 4550 2650
+Wire Wire Line
+	3850 2650 3850 2850
+Connection ~ 3850 2650
+Wire Wire Line
+	5500 4600 5500 4500
+Wire Wire Line
+	5500 4500 5700 4500
+Connection ~ 3850 2850
+Wire Wire Line
+	4850 2150 4300 2150
+Text Label 4300 2150 0    60   ~ 0
+USB
+Wire Wire Line
+	3700 3900 3700 3600
+Wire Wire Line
+	3700 3600 4000 3600
+Text Label 3800 3600 0    60   ~ 0
+USB
+$Comp
+L GND #PWR03
+U 1 1 5876575A
+P 4000 5000
+F 0 "#PWR03" H 4000 4750 50  0001 C CNN
+F 1 "GND" H 4000 4850 50  0000 C CNN
+F 2 "" H 4000 5000 50  0000 C CNN
+F 3 "" H 4000 5000 50  0000 C CNN
+	1    4000 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5000 4000 4850
+Wire Wire Line
+	4200 4850 4200 5050
+Wire Wire Line
+	4200 5050 4650 5050
+Text Label 4500 5050 0    60   ~ 0
+3V3
+Wire Wire Line
+	5700 3900 5200 3900
+Text Label 5200 3900 0    60   ~ 0
+3V3
+Wire Wire Line
+	5700 4300 5200 4300
+Wire Wire Line
+	5700 4400 5200 4400
+Text Label 5200 4300 0    60   ~ 0
+GPS_TX
+Text Label 5200 4400 0    60   ~ 0
+GPS_RX
+NoConn ~ 4300 4850
+NoConn ~ 4100 4850
+NoConn ~ 2800 4850
+NoConn ~ 2800 3900
+NoConn ~ 2900 3900
+Wire Wire Line
+	3800 4850 3800 5350
+Wire Wire Line
+	3800 5350 4650 5350
+Text Label 4500 5350 0    60   ~ 0
+BAT
+NoConn ~ 3900 4850
+NoConn ~ 3700 4850
+NoConn ~ 3600 4850
+NoConn ~ 3400 4850
+NoConn ~ 3300 4850
+NoConn ~ 3200 4850
+NoConn ~ 3100 4850
+NoConn ~ 3600 3900
+NoConn ~ 3500 3900
+NoConn ~ 3200 3900
+NoConn ~ 3100 3900
+NoConn ~ 3000 3900
+Wire Wire Line
+	3400 3900 3400 3500
+Wire Wire Line
+	3300 3900 3300 3500
+Text Label 3400 3750 1    60   ~ 0
+RB_RX
+Text Label 3300 3750 1    60   ~ 0
+RB_TX
+Wire Wire Line
+	3000 4850 3000 5350
+Wire Wire Line
+	2900 4850 2900 5350
+Text Label 3000 5350 1    60   ~ 0
+GPS_TX
+Text Label 2900 5350 1    60   ~ 0
+GPS_RX
+NoConn ~ 3800 3900
+NoConn ~ 3900 3900
+Wire Wire Line
+	1900 4050 2350 4050
+Wire Wire Line
+	1900 4150 2350 4150
+Text Label 2350 4150 2    60   ~ 0
+RB_TX
+Text Label 2350 4050 2    60   ~ 0
+RB_RX
+Wire Wire Line
+	3500 4850 3500 5650
+Wire Wire Line
+	3500 5650 5100 5650
+$Comp
+L CONN_01X04 P9
+U 1 1 58765D82
+P 1700 4100
+F 0 "P9" H 1700 4350 50  0000 C CNN
+F 1 "CONN_01X04" V 1800 4100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 1700 4100 50  0001 C CNN
+F 3 "" H 1700 4100 50  0000 C CNN
+	1    1700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58765E2F
+P 2100 4250
+F 0 "#PWR04" H 2100 4000 50  0001 C CNN
+F 1 "GND" H 2100 4100 50  0000 C CNN
+F 2 "" H 2100 4250 50  0000 C CNN
+F 3 "" H 2100 4250 50  0000 C CNN
+	1    2100 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4250 1900 4250
+Wire Wire Line
+	1900 3950 2350 3950
+Text Label 2150 3950 0    60   ~ 0
+USB
+Wire Wire Line
+	3850 2850 4100 2850
+Wire Wire Line
+	5100 6150 4750 6150
+Wire Wire Line
+	5100 6250 4750 6250
+Text Label 4750 6150 0    60   ~ 0
+3V3
+$Comp
+L GND #PWR05
+U 1 1 58768B90
+P 4750 6250
+F 0 "#PWR05" H 4750 6000 50  0001 C CNN
+F 1 "GND" H 4750 6100 50  0000 C CNN
+F 2 "" H 4750 6250 50  0000 C CNN
+F 3 "" H 4750 6250 50  0000 C CNN
+	1    4750 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 58768E8C
+P 5300 5650
+F 0 "P4" H 5300 5750 50  0000 C CNN
+F 1 "CONN_01X01" V 5400 5650 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 5300 5650 50  0001 C CNN
+F 3 "" H 5300 5650 50  0000 C CNN
+	1    5300 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 5876AC9A
+P 5300 6250
+F 0 "P1" H 5300 6450 50  0000 C CNN
+F 1 "CONN_01X03" V 5400 6250 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 5300 6250 50  0001 C CNN
+F 3 "" H 5300 6250 50  0000 C CNN
+	1    5300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 6350 5100 6250
+$EndSCHEMATC
