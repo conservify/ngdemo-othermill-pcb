@@ -140,27 +140,8 @@ F 3 "" H 5500 4600 50  0000 C CNN
 $EndComp
 Text Label 3950 2750 0    60   ~ 0
 BAT
-Wire Wire Line
-	3600 2550 4100 2550
-Wire Wire Line
-	4850 2250 3150 2250
-Connection ~ 3150 2550
-Wire Wire Line
-	3850 2550 3850 2750
-Connection ~ 3850 2550
-Wire Wire Line
-	5500 4600 5500 4500
-Wire Wire Line
-	5500 4500 5700 4500
-Connection ~ 3850 2750
-Wire Wire Line
-	4850 2150 4300 2150
 Text Label 4300 2150 0    60   ~ 0
 LOAD
-Wire Wire Line
-	3700 3900 3700 3600
-Wire Wire Line
-	3700 3600 4000 3600
 Text Label 3800 3600 0    60   ~ 0
 LOAD
 $Comp
@@ -174,16 +155,8 @@ F 3 "" H 4000 5000 50  0000 C CNN
 	1    4000 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 5000 4000 4850
-Wire Wire Line
-	4200 4850 4200 5050
-Wire Wire Line
-	4200 5050 4650 5050
 Text Label 4500 5050 0    60   ~ 0
 3V3
-Wire Wire Line
-	5700 3900 5200 3900
 Text Label 5200 3900 0    60   ~ 0
 3V3
 NoConn ~ 4300 4850
@@ -191,10 +164,6 @@ NoConn ~ 4100 4850
 NoConn ~ 2800 4850
 NoConn ~ 2800 3900
 NoConn ~ 2900 3900
-Wire Wire Line
-	3800 4850 3800 5350
-Wire Wire Line
-	3800 5350 4650 5350
 Text Label 4500 5350 0    60   ~ 0
 BAT
 NoConn ~ 3900 4850
@@ -205,37 +174,22 @@ NoConn ~ 3300 4850
 NoConn ~ 3200 4850
 NoConn ~ 3100 4850
 NoConn ~ 3600 3900
-NoConn ~ 3500 3900
 NoConn ~ 3200 3900
 NoConn ~ 3100 3900
 NoConn ~ 3000 3900
-Wire Wire Line
-	3000 4850 3000 5350
-Wire Wire Line
-	2900 4850 2900 5350
 Text Label 3000 5350 1    60   ~ 0
 GPS_TX
 Text Label 2900 5350 1    60   ~ 0
 GPS_RX
 NoConn ~ 3800 3900
 NoConn ~ 3900 3900
-Wire Wire Line
-	3500 4850 3500 5650
-Wire Wire Line
-	3500 5650 5100 5650
-Wire Wire Line
-	3850 2750 4100 2750
-Wire Wire Line
-	5100 6150 4750 6150
-Wire Wire Line
-	5100 6250 4750 6250
 Text Label 4750 6150 0    60   ~ 0
 3V3
 $Comp
-L GND #PWR05
+L GND #PWR04
 U 1 1 58768B90
 P 4750 6250
-F 0 "#PWR05" H 4750 6000 50  0001 C CNN
+F 0 "#PWR04" H 4750 6000 50  0001 C CNN
 F 1 "GND" H 4750 6100 50  0000 C CNN
 F 2 "" H 4750 6250 50  0000 C CNN
 F 3 "" H 4750 6250 50  0000 C CNN
@@ -264,18 +218,138 @@ F 3 "" H 5300 6250 50  0000 C CNN
 	1    5300 6250
 	1    0    0    -1  
 $EndComp
+Text Label 5200 4400 0    60   ~ 0
+GPS_RX
+Text Label 5200 4300 0    60   ~ 0
+GPS_TX
+$Comp
+L LED D3
+U 1 1 58DAC70E
+P 1250 3800
+F 0 "D3" H 1250 3900 50  0000 C CNN
+F 1 "LED" H 1250 3700 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_T-1_P2.54mm_Vertical_AnodeUp" H 1250 3800 50  0001 C CNN
+F 3 "" H 1250 3800 50  0000 C CNN
+	1    1250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 58DAC8A3
+P 1250 3500
+F 0 "D2" H 1250 3600 50  0000 C CNN
+F 1 "LED" H 1250 3400 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_T-1_P2.54mm_Vertical_AnodeUp" H 1250 3500 50  0001 C CNN
+F 3 "" H 1250 3500 50  0000 C CNN
+	1    1250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 58DAC94B
+P 1250 3200
+F 0 "D1" H 1250 3300 50  0000 C CNN
+F 1 "LED" H 1250 3100 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_T-1_P2.54mm_Vertical_AnodeUp" H 1250 3200 50  0001 C CNN
+F 3 "" H 1250 3200 50  0000 C CNN
+	1    1250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 58DAC9A7
+P 1650 3800
+F 0 "R5" V 1730 3800 50  0000 C CNN
+F 1 "R" V 1650 3800 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1580 3800 50  0001 C CNN
+F 3 "" H 1650 3800 50  0000 C CNN
+	1    1650 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 58DAC9FC
+P 1650 3500
+F 0 "R4" V 1730 3500 50  0000 C CNN
+F 1 "R" V 1650 3500 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1580 3500 50  0001 C CNN
+F 3 "" H 1650 3500 50  0000 C CNN
+	1    1650 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 58DACA3B
+P 1650 3200
+F 0 "R3" V 1730 3200 50  0000 C CNN
+F 1 "R" V 1650 3200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1580 3200 50  0001 C CNN
+F 3 "" H 1650 3200 50  0000 C CNN
+	1    1650 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 58DACA7B
+P 900 4100
+F 0 "#PWR05" H 900 3850 50  0001 C CNN
+F 1 "GND" H 900 3950 50  0000 C CNN
+F 2 "" H 900 4100 50  0000 C CNN
+F 3 "" H 900 4100 50  0000 C CNN
+	1    900  4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2550 4100 2550
+Wire Wire Line
+	4850 2250 3150 2250
+Connection ~ 3150 2550
+Wire Wire Line
+	3850 2550 3850 2750
+Connection ~ 3850 2550
+Wire Wire Line
+	5500 4600 5500 4500
+Wire Wire Line
+	5500 4500 5700 4500
+Connection ~ 3850 2750
+Wire Wire Line
+	4850 2150 4300 2150
+Wire Wire Line
+	3700 3900 3700 3600
+Wire Wire Line
+	3700 3600 4000 3600
+Wire Wire Line
+	4000 5000 4000 4850
+Wire Wire Line
+	4200 4850 4200 5050
+Wire Wire Line
+	4200 5050 4650 5050
+Wire Wire Line
+	5700 3900 5200 3900
+Wire Wire Line
+	3800 4850 3800 5350
+Wire Wire Line
+	3800 5350 4650 5350
+Wire Wire Line
+	3000 4850 3000 5350
+Wire Wire Line
+	2900 4850 2900 5350
+Wire Wire Line
+	3500 4850 3500 5650
+Wire Wire Line
+	3500 5650 5100 5650
+Wire Wire Line
+	3850 2750 4100 2750
+Wire Wire Line
+	5100 6150 4750 6150
+Wire Wire Line
+	5100 6250 4750 6250
 Wire Wire Line
 	5100 6350 5100 6250
 Wire Wire Line
 	5700 4300 5200 4300
 Wire Wire Line
 	5700 4400 5200 4400
-Text Label 5200 4400 0    60   ~ 0
-GPS_RX
-Text Label 5200 4300 0    60   ~ 0
-GPS_TX
-NoConn ~ 3400 3900
-NoConn ~ 3300 3900
 Wire Wire Line
 	4850 2550 4400 2550
 Wire Wire Line
@@ -287,4 +361,32 @@ Wire Wire Line
 Wire Wire Line
 	4850 2850 3150 2850
 Connection ~ 3150 2850
+Wire Wire Line
+	900  3200 900  4100
+Wire Wire Line
+	900  3800 1100 3800
+Wire Wire Line
+	900  3500 1100 3500
+Connection ~ 900  3800
+Wire Wire Line
+	900  3200 1100 3200
+Connection ~ 900  3500
+Wire Wire Line
+	1400 3200 1500 3200
+Wire Wire Line
+	1500 3500 1400 3500
+Wire Wire Line
+	1400 3800 1500 3800
+Wire Wire Line
+	3300 3900 3300 3800
+Wire Wire Line
+	3300 3800 1800 3800
+Wire Wire Line
+	1800 3500 3400 3500
+Wire Wire Line
+	3400 3500 3400 3900
+Wire Wire Line
+	3500 3900 3500 3200
+Wire Wire Line
+	3500 3200 1800 3200
 $EndSCHEMATC
