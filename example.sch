@@ -57,34 +57,34 @@ $EndComp
 $Comp
 L R R1
 U 1 1 587596E9
-P 3450 2650
-F 0 "R1" V 3530 2650 50  0000 C CNN
-F 1 "R" V 3450 2650 50  0000 C CNN
-F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 3380 2650 50  0001 C CNN
-F 3 "" H 3450 2650 50  0000 C CNN
-	1    3450 2650
+P 3450 2550
+F 0 "R1" V 3530 2550 50  0000 C CNN
+F 1 "R" V 3450 2550 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 3380 2550 50  0001 C CNN
+F 3 "" H 3450 2550 50  0000 C CNN
+	1    3450 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L R R2
 U 1 1 58759766
-P 4250 2650
-F 0 "R2" V 4330 2650 50  0000 C CNN
-F 1 "R" V 4250 2650 50  0000 C CNN
-F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 4180 2650 50  0001 C CNN
-F 3 "" H 4250 2650 50  0000 C CNN
-	1    4250 2650
+P 4250 2550
+F 0 "R2" V 4330 2550 50  0000 C CNN
+F 1 "R" V 4250 2550 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" V 4180 2550 50  0001 C CNN
+F 3 "" H 4250 2550 50  0000 C CNN
+	1    4250 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR01
 U 1 1 58759956
-P 3150 2750
-F 0 "#PWR01" H 3150 2500 50  0001 C CNN
-F 1 "GND" H 3150 2600 50  0000 C CNN
-F 2 "" H 3150 2750 50  0000 C CNN
-F 3 "" H 3150 2750 50  0000 C CNN
-	1    3150 2750
+P 3150 2950
+F 0 "#PWR01" H 3150 2700 50  0001 C CNN
+F 1 "GND" H 3150 2800 50  0000 C CNN
+F 2 "" H 3150 2950 50  0000 C CNN
+F 3 "" H 3150 2950 50  0000 C CNN
+	1    3150 2950
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4850 2450
@@ -138,41 +138,31 @@ F 3 "" H 5500 4600 50  0000 C CNN
 	1    5500 4600
 	1    0    0    -1  
 $EndComp
-Text Label 3950 2850 0    60   ~ 0
+Text Label 3950 2750 0    60   ~ 0
 BAT
 Wire Wire Line
-	3600 2650 4100 2650
-Wire Wire Line
-	3150 2250 3150 2750
-Wire Wire Line
-	3150 2650 3300 2650
-Wire Wire Line
-	4400 2650 4850 2650
-Wire Wire Line
-	3150 2550 4850 2550
-Connection ~ 3150 2650
+	3600 2550 4100 2550
 Wire Wire Line
 	4850 2250 3150 2250
 Connection ~ 3150 2550
-Connection ~ 4550 2650
 Wire Wire Line
-	3850 2650 3850 2850
-Connection ~ 3850 2650
+	3850 2550 3850 2750
+Connection ~ 3850 2550
 Wire Wire Line
 	5500 4600 5500 4500
 Wire Wire Line
 	5500 4500 5700 4500
-Connection ~ 3850 2850
+Connection ~ 3850 2750
 Wire Wire Line
 	4850 2150 4300 2150
 Text Label 4300 2150 0    60   ~ 0
-USB
+LOAD
 Wire Wire Line
 	3700 3900 3700 3600
 Wire Wire Line
 	3700 3600 4000 3600
 Text Label 3800 3600 0    60   ~ 0
-USB
+LOAD
 $Comp
 L GND #PWR03
 U 1 1 5876575A
@@ -196,14 +186,6 @@ Wire Wire Line
 	5700 3900 5200 3900
 Text Label 5200 3900 0    60   ~ 0
 3V3
-Wire Wire Line
-	5700 4300 5200 4300
-Wire Wire Line
-	5700 4400 5200 4400
-Text Label 5200 4300 0    60   ~ 0
-GPS_TX
-Text Label 5200 4400 0    60   ~ 0
-GPS_RX
 NoConn ~ 4300 4850
 NoConn ~ 4100 4850
 NoConn ~ 2800 4850
@@ -228,14 +210,6 @@ NoConn ~ 3200 3900
 NoConn ~ 3100 3900
 NoConn ~ 3000 3900
 Wire Wire Line
-	3400 3900 3400 3500
-Wire Wire Line
-	3300 3900 3300 3500
-Text Label 3400 3750 1    60   ~ 0
-RB_RX
-Text Label 3300 3750 1    60   ~ 0
-RB_TX
-Wire Wire Line
 	3000 4850 3000 5350
 Wire Wire Line
 	2900 4850 2900 5350
@@ -246,47 +220,11 @@ GPS_RX
 NoConn ~ 3800 3900
 NoConn ~ 3900 3900
 Wire Wire Line
-	1900 4050 2350 4050
-Wire Wire Line
-	1900 4150 2350 4150
-Text Label 2350 4150 2    60   ~ 0
-RB_TX
-Text Label 2350 4050 2    60   ~ 0
-RB_RX
-Wire Wire Line
 	3500 4850 3500 5650
 Wire Wire Line
 	3500 5650 5100 5650
-$Comp
-L CONN_01X04 P9
-U 1 1 58765D82
-P 1700 4100
-F 0 "P9" H 1700 4350 50  0000 C CNN
-F 1 "CONN_01X04" V 1800 4100 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 1700 4100 50  0001 C CNN
-F 3 "" H 1700 4100 50  0000 C CNN
-	1    1700 4100
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR04
-U 1 1 58765E2F
-P 2100 4250
-F 0 "#PWR04" H 2100 4000 50  0001 C CNN
-F 1 "GND" H 2100 4100 50  0000 C CNN
-F 2 "" H 2100 4250 50  0000 C CNN
-F 3 "" H 2100 4250 50  0000 C CNN
-	1    2100 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2100 4250 1900 4250
-Wire Wire Line
-	1900 3950 2350 3950
-Text Label 2150 3950 0    60   ~ 0
-USB
-Wire Wire Line
-	3850 2850 4100 2850
+	3850 2750 4100 2750
 Wire Wire Line
 	5100 6150 4750 6150
 Wire Wire Line
@@ -328,4 +266,25 @@ F 3 "" H 5300 6250 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	5100 6350 5100 6250
+Wire Wire Line
+	5700 4300 5200 4300
+Wire Wire Line
+	5700 4400 5200 4400
+Text Label 5200 4400 0    60   ~ 0
+GPS_RX
+Text Label 5200 4300 0    60   ~ 0
+GPS_TX
+NoConn ~ 3400 3900
+NoConn ~ 3300 3900
+Wire Wire Line
+	4850 2550 4400 2550
+Wire Wire Line
+	3300 2550 3150 2550
+Wire Wire Line
+	3150 2250 3150 2950
+Wire Wire Line
+	4850 2650 4850 2850
+Wire Wire Line
+	4850 2850 3150 2850
+Connection ~ 3150 2850
 $EndSCHEMATC
