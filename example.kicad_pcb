@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.6)
 
   (general
-    (links 24)
+    (links 0)
     (no_connects 0)
     (area 110.414999 45.009999 237.565001 146.760001)
     (thickness 1.6)
     (drawings 4)
     (tracks 75)
     (zones 0)
-    (modules 16)
+    (modules 17)
     (nets 15)
   )
 
@@ -1548,6 +1548,21 @@
     )
   )
 
+  (module Mounting_Holes:MountingHole_8.4mm_M8 (layer F.Cu) (tedit 56D1B4CB) (tstamp 58DE9ACF)
+    (at 152.4 106.68)
+    (descr "Mounting Hole 8.4mm, no annular, M8")
+    (tags "mounting hole 8.4mm no annular m8")
+    (fp_text reference REF** (at 0 -9.4) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value MountingHole_8.4mm_M8 (at 0 9.4) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 8.4 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 8.65 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 8.4 8.4) (drill 8.4) (layers *.Cu *.Mask))
+  )
+
   (gr_line (start 110.49 146.685) (end 237.49 146.685) (angle 90) (layer Edge.Cuts) (width 0.15) (tstamp 587658FE))
   (gr_line (start 237.49 45.085) (end 237.49 146.685) (angle 90) (layer Edge.Cuts) (width 0.15) (tstamp 587658E8))
   (gr_line (start 110.49 45.085) (end 110.49 146.685) (angle 90) (layer Edge.Cuts) (width 0.15))
@@ -1635,12 +1650,12 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 110.49 45.212) (xy 195.58 45.212) (xy 195.58 96.52) (xy 110.49 96.52)
+        (xy 110.49 45.212) (xy 195.58 45.212) (xy 195.58 101.6) (xy 110.49 101.6)
       )
     )
     (filled_polygon
       (pts
-        (xy 195.453 96.393) (xy 111.392 96.393) (xy 111.392 70.834) (xy 114.327 70.834) (xy 114.327 90.138)
+        (xy 195.453 101.473) (xy 111.392 101.473) (xy 111.392 70.834) (xy 114.327 70.834) (xy 114.327 90.138)
         (xy 114.4204 90.607553) (xy 114.68638 91.00562) (xy 117.73438 94.05362) (xy 118.132447 94.3196) (xy 118.602 94.413)
         (xy 129.016 94.413) (xy 129.485553 94.3196) (xy 129.88362 94.05362) (xy 133.790077 90.147163) (xy 139.092443 90.147163)
         (xy 139.191042 90.413965) (xy 139.800582 90.640401) (xy 140.450377 90.616341) (xy 140.938958 90.413965) (xy 141.037557 90.147163)
@@ -1850,12 +1865,12 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 110.49 45.212) (xy 195.58 45.212) (xy 195.58 96.52) (xy 110.49 96.52)
+        (xy 110.49 45.212) (xy 195.58 45.212) (xy 195.58 101.6) (xy 110.49 101.6)
       )
     )
     (filled_polygon
       (pts
-        (xy 195.453 96.393) (xy 111.392 96.393) (xy 111.392 90.147163) (xy 139.092443 90.147163) (xy 139.191042 90.413965)
+        (xy 195.453 101.473) (xy 111.392 101.473) (xy 111.392 90.147163) (xy 139.092443 90.147163) (xy 139.191042 90.413965)
         (xy 139.800582 90.640401) (xy 140.450377 90.616341) (xy 140.938958 90.413965) (xy 141.037557 90.147163) (xy 140.065 89.174605)
         (xy 139.092443 90.147163) (xy 111.392 90.147163) (xy 111.392 88.730582) (xy 138.419599 88.730582) (xy 138.443659 89.380377)
         (xy 138.646035 89.868958) (xy 138.912837 89.967557) (xy 139.885395 88.995) (xy 140.244605 88.995) (xy 141.217163 89.967557)
